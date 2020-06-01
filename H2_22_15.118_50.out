@@ -1,5 +1,5 @@
 
-     Program PWSCF v.6.4.1 starts on 31May2020 at 21:40:54 
+     Program PWSCF v.6.4.1 starts on 31May2020 at 22:10:36 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -14,7 +14,7 @@
      Threads/MPI process:                     1
 
      MPI processes distributed on     1 nodes
-     Reading input from H2_18_15.118_50.pw.in
+     Reading input from H2_22_15.118_50.pw.in
 
      Current dimensions of program PWSCF are:
      Max number of different atomic species (ntypx) = 10
@@ -29,7 +29,7 @@
      G-vector sticks info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Sum        7873    3145    859               565091   142857   20669
+     Sum        7873    3145    859               565091   142857   20621
  
 
 
@@ -87,7 +87,7 @@
          1           H   tau(   1) = (   0.0000000   0.0000000   0.0000000  )
          2           H   tau(   2) = (   0.0927488   0.0000000   0.0000000  )
 
-     number of k points=   910
+     number of k points=  1596
 
      Number of k-points >= 100: set verbosity='high' to print them.
 
@@ -95,7 +95,7 @@
 
      Smooth grid:   142857 G-vectors     FFT dimensions: (  72,  72,  72)
 
-     Estimated max dynamical RAM per process >     658.34 MB
+     Estimated max dynamical RAM per process >     845.36 MB
 
      Initial potential from superposition of free atoms
 
@@ -104,7 +104,7 @@
      negative rho (up, down):  4.503E-05 0.000E+00
      Starting wfcs are    2 randomized atomic wfcs
 
-     total cpu time spent up to now is       20.8 secs
+     total cpu time spent up to now is       35.3 secs
 
      Self-consistent Calculation
 
@@ -114,11 +114,11 @@
 
      negative rho (up, down):  1.331E-05 0.000E+00
 
-     total cpu time spent up to now is       50.7 secs
+     total cpu time spent up to now is       87.1 secs
 
-     total energy              =      -2.29275910 Ry
-     Harris-Foulkes estimate   =      -2.70625065 Ry
-     estimated scf accuracy    <       0.64205586 Ry
+     total energy              =      -2.29275803 Ry
+     Harris-Foulkes estimate   =      -2.70625069 Ry
+     estimated scf accuracy    <       0.64205771 Ry
 
      iteration #  2     ecut=    50.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
@@ -126,11 +126,11 @@
 
      negative rho (up, down):  4.400E-06 0.000E+00
 
-     total cpu time spent up to now is       80.3 secs
+     total cpu time spent up to now is      138.6 secs
 
-     total energy              =      -2.32866760 Ry
-     Harris-Foulkes estimate   =      -2.33657145 Ry
-     estimated scf accuracy    <       0.01660427 Ry
+     total energy              =      -2.32866762 Ry
+     Harris-Foulkes estimate   =      -2.33657132 Ry
+     estimated scf accuracy    <       0.01660415 Ry
 
      iteration #  3     ecut=    50.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
@@ -138,7 +138,7 @@
 
      negative rho (up, down):  2.765E-06 0.000E+00
 
-     total cpu time spent up to now is      109.8 secs
+     total cpu time spent up to now is      190.0 secs
 
      total energy              =      -2.33102869 Ry
      Harris-Foulkes estimate   =      -2.33073930 Ry
@@ -150,11 +150,11 @@
 
      negative rho (up, down):  3.116E-05 0.000E+00
 
-     total cpu time spent up to now is      131.7 secs
+     total cpu time spent up to now is      228.0 secs
 
      total energy              =      -2.33105015 Ry
      Harris-Foulkes estimate   =      -2.33107173 Ry
-     estimated scf accuracy    <       0.00004632 Ry
+     estimated scf accuracy    <       0.00004631 Ry
 
      iteration #  5     ecut=    50.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
@@ -162,7 +162,7 @@
 
      negative rho (up, down):  2.896E-06 0.000E+00
 
-     total cpu time spent up to now is      161.1 secs
+     total cpu time spent up to now is      279.3 secs
 
      End of self-consistent calculation
 
@@ -176,17 +176,17 @@
 
      The total energy is the sum of the following terms:
 
-     one-electron contribution =      -3.43453786 Ry
-     hartree contribution      =       1.84368779 Ry
-     xc contribution           =      -1.37696349 Ry
+     one-electron contribution =      -3.43453787 Ry
+     hartree contribution      =       1.84368781 Ry
+     xc contribution           =      -1.37696350 Ry
      ewald contribution        =       0.63675665 Ry
 
      convergence has been achieved in   5 iterations
 
      Forces acting on atoms (cartesian axes, Ry/au):
 
-     atom    1 type  1   force =    -0.01433112    0.00000000    0.00000000
-     atom    2 type  1   force =     0.01433112   -0.00000000    0.00000000
+     atom    1 type  1   force =    -0.01433110    0.00000000    0.00000000
+     atom    2 type  1   force =     0.01433110   -0.00000000    0.00000000
 
      Total force =     0.020267     Total SCF correction =     0.000102
 
@@ -204,15 +204,15 @@
      number of scf cycles    =   1
      number of bfgs steps    =   0
 
-     energy   new            =      -2.3310569119 Ry
+     energy   new            =      -2.3310569118 Ry
 
-     new trust radius        =       0.0143311161 bohr
+     new trust radius        =       0.0143311034 bohr
      new conv_thr            =       0.0000010000 Ry
 
 
 ATOMIC_POSITIONS (crystal)
-H       -0.000947951   0.000000000   0.000000000
-H        0.093696779  -0.000000000   0.000000000
+H       -0.000947950  -0.000000000   0.000000000
+H        0.093696778   0.000000000   0.000000000
 
 
 
@@ -221,7 +221,7 @@ H        0.093696779  -0.000000000   0.000000000
 
      negative rho (up, down):  2.598E-04 0.000E+00
 
-     total cpu time spent up to now is      168.7 secs
+     total cpu time spent up to now is      291.1 secs
 
      Self-consistent Calculation
 
@@ -231,7 +231,7 @@ H        0.093696779  -0.000000000   0.000000000
 
      negative rho (up, down):  6.156E-05 0.000E+00
 
-     total cpu time spent up to now is      205.9 secs
+     total cpu time spent up to now is      356.2 secs
 
      total energy              =      -2.33114615 Ry
      Harris-Foulkes estimate   =      -2.33120096 Ry
@@ -243,7 +243,7 @@ H        0.093696779  -0.000000000   0.000000000
 
      negative rho (up, down):  1.327E-05 0.000E+00
 
-     total cpu time spent up to now is      227.8 secs
+     total cpu time spent up to now is      394.1 secs
 
      total energy              =      -2.33115709 Ry
      Harris-Foulkes estimate   =      -2.33115689 Ry
@@ -255,7 +255,7 @@ H        0.093696779  -0.000000000   0.000000000
 
      negative rho (up, down):  2.709E-06 0.000E+00
 
-     total cpu time spent up to now is      257.2 secs
+     total cpu time spent up to now is      445.5 secs
 
      End of self-consistent calculation
 
@@ -269,17 +269,17 @@ H        0.093696779  -0.000000000   0.000000000
 
      The total energy is the sum of the following terms:
 
-     one-electron contribution =      -3.39565830 Ry
-     hartree contribution      =       1.82385879 Ry
-     xc contribution           =      -1.36766757 Ry
-     ewald contribution        =       0.60830975 Ry
+     one-electron contribution =      -3.39565834 Ry
+     hartree contribution      =       1.82385881 Ry
+     xc contribution           =      -1.36766758 Ry
+     ewald contribution        =       0.60830977 Ry
 
      convergence has been achieved in   3 iterations
 
      Forces acting on atoms (cartesian axes, Ry/au):
 
-     atom    1 type  1   force =     0.00688436    0.00000000    0.00000000
-     atom    2 type  1   force =    -0.00688436   -0.00000000    0.00000000
+     atom    1 type  1   force =     0.00688434    0.00000000    0.00000000
+     atom    2 type  1   force =    -0.00688434   -0.00000000    0.00000000
 
      Total force =     0.009736     Total SCF correction =     0.000051
 
@@ -295,18 +295,18 @@ H        0.093696779  -0.000000000   0.000000000
      number of scf cycles    =   2
      number of bfgs steps    =   1
 
-     energy   old            =      -2.3310569119 Ry
+     energy   old            =      -2.3310569118 Ry
      energy   new            =      -2.3311573307 Ry
 
      CASE: energy  _new < energy  _old
 
-     new trust radius        =       0.0046504039 bohr
+     new trust radius        =       0.0046503945 bohr
      new conv_thr            =       0.0000000100 Ry
 
 
 ATOMIC_POSITIONS (crystal)
-H       -0.000640343   0.000000000   0.000000000
-H        0.093389172  -0.000000000   0.000000000
+H       -0.000640343  -0.000000000   0.000000000
+H        0.093389172   0.000000000   0.000000000
 
 
 
@@ -315,7 +315,7 @@ H        0.093389172  -0.000000000   0.000000000
 
      negative rho (up, down):  8.736E-05 0.000E+00
 
-     total cpu time spent up to now is      264.7 secs
+     total cpu time spent up to now is      457.2 secs
 
      Self-consistent Calculation
 
@@ -325,7 +325,7 @@ H        0.093389172  -0.000000000   0.000000000
 
      negative rho (up, down):  2.032E-05 0.000E+00
 
-     total cpu time spent up to now is      294.2 secs
+     total cpu time spent up to now is      508.6 secs
 
      total energy              =      -2.33118915 Ry
      Harris-Foulkes estimate   =      -2.33119511 Ry
@@ -337,7 +337,7 @@ H        0.093389172  -0.000000000   0.000000000
 
      negative rho (up, down):  5.239E-06 0.000E+00
 
-     total cpu time spent up to now is      316.1 secs
+     total cpu time spent up to now is      546.6 secs
 
      total energy              =      -2.33119023 Ry
      Harris-Foulkes estimate   =      -2.33119022 Ry
@@ -349,7 +349,7 @@ H        0.093389172  -0.000000000   0.000000000
 
      negative rho (up, down):  2.772E-06 0.000E+00
 
-     total cpu time spent up to now is      345.5 secs
+     total cpu time spent up to now is      597.9 secs
 
      End of self-consistent calculation
 
@@ -363,10 +363,10 @@ H        0.093389172  -0.000000000   0.000000000
 
      The total energy is the sum of the following terms:
 
-     one-electron contribution =      -3.40822604 Ry
+     one-electron contribution =      -3.40822605 Ry
      hartree contribution      =       1.83031553 Ry
      xc contribution           =      -1.37069391 Ry
-     ewald contribution        =       0.61741412 Ry
+     ewald contribution        =       0.61741413 Ry
 
      convergence has been achieved in   3 iterations
 
@@ -381,79 +381,81 @@ H        0.093389172  -0.000000000   0.000000000
      Computing stress (Cartesian axis) and pressure
 
           total   stress  (Ry/bohr**3)                   (kbar)     P=   -0.01
-  -0.00000011   0.00000000   0.00000000         -0.02      0.00      0.00
-   0.00000000  -0.00000001   0.00000000          0.00     -0.00      0.00
-   0.00000000   0.00000000  -0.00000001          0.00      0.00     -0.00
+  -0.00000011  -0.00000000   0.00000000         -0.02     -0.00      0.00
+  -0.00000000  -0.00000001  -0.00000000         -0.00     -0.00     -0.00
+   0.00000000  -0.00000000  -0.00000001          0.00     -0.00     -0.00
 
 
-     bfgs converged in   3 scf cycles and   2 bfgs steps
+     BFGS Geometry Optimization
+
+     bfgs converged in   1 scf cycles and   0 bfgs steps
      (criteria: energy <  1.0E-04 Ry, force <  1.0E-03 Ry/Bohr)
 
      End of BFGS Geometry Optimization
 
-     Final energy   =      -2.3311902962 Ry
+     Final energy   =      -2.3311902961 Ry
 Begin final coordinates
 
 ATOMIC_POSITIONS (crystal)
-H       -0.000640343   0.000000000   0.000000000
-H        0.093389172  -0.000000000   0.000000000
+H       -0.000640343  -0.000000000   0.000000000
+H        0.093389172   0.000000000   0.000000000
 End final coordinates
 
 
 
      Writing output data file H2_gas.save/
  
-     init_run     :     20.35s CPU     20.73s WALL (       1 calls)
-     electrons    :    307.30s CPU    310.13s WALL (       3 calls)
-     update_pot   :      1.14s CPU      1.24s WALL (       2 calls)
-     forces       :      8.31s CPU      8.47s WALL (       3 calls)
-     stress       :     10.54s CPU     10.85s WALL (       3 calls)
+     init_run     :     34.75s CPU     35.28s WALL (       1 calls)
+     electrons    :    535.24s CPU    539.53s WALL (       3 calls)
+     update_pot   :      1.12s CPU      1.23s WALL (       2 calls)
+     forces       :     14.15s CPU     14.38s WALL (       3 calls)
+     stress       :     17.23s CPU     17.57s WALL (       3 calls)
 
      Called by init_run:
-     wfcinit      :     17.41s CPU     17.55s WALL (       1 calls)
-     potinit      :      0.81s CPU      0.91s WALL (       1 calls)
-     hinit0       :      1.86s CPU      1.92s WALL (       1 calls)
+     wfcinit      :     30.46s CPU     30.72s WALL (       1 calls)
+     potinit      :      0.79s CPU      0.89s WALL (       1 calls)
+     hinit0       :      3.18s CPU      3.28s WALL (       1 calls)
 
      Called by electrons:
-     c_bands      :    247.89s CPU    248.71s WALL (      11 calls)
-     sum_band     :     52.58s CPU     53.16s WALL (      11 calls)
-     v_of_rho     :      7.10s CPU      7.86s WALL (      14 calls)
-     newd         :      0.62s CPU      0.97s WALL (      14 calls)
-     mix_rho      :      0.46s CPU      0.51s WALL (      11 calls)
+     c_bands      :    436.82s CPU    438.61s WALL (      11 calls)
+     sum_band     :     91.60s CPU     92.59s WALL (      11 calls)
+     v_of_rho     :      7.03s CPU      7.83s WALL (      14 calls)
+     newd         :      0.67s CPU      0.97s WALL (      14 calls)
+     mix_rho      :      0.46s CPU      0.55s WALL (      11 calls)
 
      Called by c_bands:
-     init_us_2    :     27.33s CPU     27.70s WALL (   26390 calls)
-     cegterg      :    230.86s CPU    231.42s WALL (   10010 calls)
+     init_us_2    :     47.77s CPU     48.64s WALL (   46284 calls)
+     cegterg      :    406.97s CPU    408.13s WALL (   17556 calls)
 
      Called by sum_band:
-     sum_band:bec :      0.04s CPU      0.04s WALL (   10010 calls)
-     addusdens    :      0.32s CPU      0.58s WALL (      11 calls)
+     sum_band:bec :      0.07s CPU      0.07s WALL (   17556 calls)
+     addusdens    :      0.34s CPU      0.61s WALL (      11 calls)
 
      Called by *egterg:
-     h_psi        :    231.85s CPU    232.30s WALL (   29120 calls)
-     s_psi        :      2.04s CPU      2.05s WALL (   29120 calls)
-     g_psi        :      2.97s CPU      3.01s WALL (   18200 calls)
-     cdiaghg      :      0.56s CPU      0.57s WALL (   26390 calls)
+     h_psi        :    408.33s CPU    409.26s WALL (   51072 calls)
+     s_psi        :      3.59s CPU      3.63s WALL (   51072 calls)
+     g_psi        :      5.21s CPU      5.30s WALL (   31920 calls)
+     cdiaghg      :      1.13s CPU      1.16s WALL (   46284 calls)
 
      Called by h_psi:
-     h_psi:pot    :    230.94s CPU    231.37s WALL (   29120 calls)
-     h_psi:calbec :      1.85s CPU      1.86s WALL (   29120 calls)
-     vloc_psi     :    226.93s CPU    227.35s WALL (   29120 calls)
-     add_vuspsi   :      2.03s CPU      2.05s WALL (   29120 calls)
+     h_psi:pot    :    406.78s CPU    407.66s WALL (   51072 calls)
+     h_psi:calbec :      3.23s CPU      3.25s WALL (   51072 calls)
+     vloc_psi     :    399.68s CPU    400.57s WALL (   51072 calls)
+     add_vuspsi   :      3.60s CPU      3.64s WALL (   51072 calls)
 
      General routines
-     calbec       :      3.20s CPU      3.21s WALL (   52780 calls)
-     fft          :      2.79s CPU      2.80s WALL (     202 calls)
+     calbec       :      5.55s CPU      5.58s WALL (   92568 calls)
+     fft          :      2.78s CPU      2.79s WALL (     202 calls)
      ffts         :      0.09s CPU      0.09s WALL (      25 calls)
-     fftw         :    234.30s CPU    234.57s WALL (   70070 calls)
+     fftw         :    412.84s CPU    413.40s WALL (  122892 calls)
      interpolate  :      0.31s CPU      0.37s WALL (      14 calls)
  
      Parallel routines
  
-     PWSCF        :   5m48.27s CPU   5m58.37s WALL
+     PWSCF        :  10m 3.35s CPU  10m23.78s WALL
 
  
-   This run was terminated on:  21:46:52  31May2020            
+   This run was terminated on:  22:21: 0  31May2020            
 
 =------------------------------------------------------------------------------=
    JOB DONE.
