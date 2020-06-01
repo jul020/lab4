@@ -1,0 +1,29 @@
+ &CONTROL
+  calculation = 'relax' ,
+  outdir = './tmp' ,
+  prefix = 'H2_gas',
+  pseudo_dir = './' ,
+  tprnfor = .True.,
+  tstress = .True.,
+ /
+ &SYSTEM
+  ibrav = 4,
+  celldm(1) = {alat},
+  celldm(3) = 1,
+  nat = 2,
+  ntyp = 1,
+  ecutwfc = {ecut},
+  ecutrho = {ecutrho},
+ /
+ &ELECTRONS
+ /
+ &IONS
+  ion_dynamics = 'bfgs',
+ /
+ATOMIC_SPECIES
+  H   1.00794  H.pbe-rrkjus.UPF
+ATOMIC_POSITIONS crystal 
+  H 0.0 0.0 0.0
+  H {x} {y} {z}
+K_POINTS automatic 
+  {k} {k} {k}   0 0 0
