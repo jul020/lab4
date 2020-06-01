@@ -16,7 +16,7 @@ y = 0
 z = 0
 
 # Loop through different k-points.
-for k in np.arange(18, 26, 2):
+for alat in np.arange(15.118, 31, 3.779):
     # This generates a string from the template with the parameters replaced
     # by the specified values.
     s = template.format(k=k, alat=alat, ecut=ecut, ecutrho=ecutrho, x=x, y=y, z=z)
