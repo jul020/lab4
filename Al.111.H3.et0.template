@@ -1,0 +1,45 @@
+ &CONTROL
+  calculation = 'relax' ,
+  outdir = './tmp' ,
+  prefix = 'Al_111_3_3',
+  pseudo_dir = './' ,
+  tprnfor = .True.,
+  tstress = .True.,
+ /
+ &SYSTEM
+  ibrav = 4,
+  celldm(1) = 5.376,
+  celldm(3) = 14.696938456699067,
+  nat = 10,
+  ntyp = 2,
+  ecutwfc = 30,
+  ecutrho = 150,
+  occupations = 'smearing',
+  smearing = 'cold',
+  degauss = 0.025,
+ /
+ &ELECTRONS
+  diagonalization = 'david',
+  conv_thr = 9e-06,
+  mixing_beta = 0.3,
+  mixing_mode = 'local-TF'
+ /
+ &IONS
+  ion_dynamics = 'bfgs',
+ /
+ATOMIC_SPECIES
+  Al   26.98   Al.pbe-n-van.UPF
+  H   1.0079   H.pbe-rrkjus.UPF
+ATOMIC_POSITIONS crystal 
+  Al 0.3333333 0.6666666 0.1111111
+  Al 0.6666666 0.3333333 0.05555555
+  Al 0.0 0.0 0.0
+  Al 0.3333333 0.6666666 0.27777776666666665
+  Al 0.6666666 0.3333333 0.22222221666666667
+  Al 0.0 0.0 0.16666666666666666
+  Al 0.3333333 0.6666666 0.44444443333333333
+  Al 0.6666666 0.3333333 0.3888888833333333
+  Al 0.0 0.0 0.3333333333333333
+  H 0.6666666 0.3333333 0.41666665
+K_POINTS Automatic 
+  16 16 1  0 0 0
