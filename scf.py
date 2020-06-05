@@ -8,7 +8,7 @@ with open("H2.pw.in.template") as f:
 
 # Set default values for various parameters
 k = 18 # k-point grid of 16x16x16
-alat = 15.118 # The lattice parameter for the cell in Bohr.
+alat = 26.456 # The lattice parameter for the cell in Bohr.
 ecut = 50
 ecutrho = ecut*10
 x = 0.742/0.529177208/alat
@@ -16,7 +16,7 @@ y = 0
 z = 0
 
 # Loop through different k-points.
-for alat in np.arange(15.118, 31, 3.779):
+for alat in np.arange(26.456, 31, 3.779):
     # This generates a string from the template with the parameters replaced
     # by the specified values.
     s = template.format(k=k, alat=alat, ecut=ecut, ecutrho=ecutrho, x=x, y=y, z=z)

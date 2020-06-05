@@ -40,8 +40,8 @@ def get_results(filename):
 
 def analyze(filenames):
     fieldnames = ['nkpts', 'alat', 'energy','total_force','ecut']
-    os.system("rm Al111_surf.csv")
-    with open('Al111_surf.csv', 'w') as csvfile:
+    os.system("rm H2_cell.csv")
+    with open('H2_cell.csv', 'w') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for f in filenames:
@@ -61,7 +61,7 @@ if __name__ == "__main__":
 
  
 from itertools import islice
-with open('Al111_surf.csv', 'r') as res1:
+with open('H2_cell.csv', 'r') as res1:
     for line in islice(res1, 0, None):
         data1=csv.reader(res1, delimiter=',')
         for row in data1:
@@ -77,18 +77,21 @@ res1.close()
 # Energy 1 Ry = 13.605698 eV
 
 length=len(np.array(v_ene))
-area=3**0.5*0.5*(5.376*0.529177208*10**(-10))**2
-xx=np.arange(4,7,1)
-yy=((np.array(v_ene)-xx*3*(-12.46666333))*13.605698*1.60217733*10**(-19))/(2*area)
+#area=3**0.5*0.5*(5.376*0.529177208*10**(-10))**2
+#xx=np.arange(4,6,1)
+#yy=((np.array(v_ene)-xx*3*(-12.46666333))*13.605698*1.60217733*10**(-19))/(2*area)
 
-ind=np.where(yy==np.amin(yy))
-print(yy[ind])
+yy=np.array(v_ene)/2*13.605698*1000
+xx=np.array(v_alat)*0.529177208
+#ind=np.where(yy==np.amin(yy))
+#print(yy[ind])
+
 
 plt.plot(xx,yy,marker='o',color='purple',linewidth=1.5,markersize=5)
 plt.grid(color='b',lw=0.75)
-plt.title('Number of slab vs. surface energy')
-plt.xlabel('Number of slab (a.u)')
-plt.ylabel('Surface energy (J/m^2)')
+plt.title('Cell size vs. total energy')
+plt.xlabel('Cell size (a=b=c, Angstrom)')
+plt.ylabel('Absolute energy (meV/atom)')
 plt.savefig('myfig2')
 plt.clf()
 
@@ -107,8 +110,8 @@ diff=yy[1:length:1]-yy[0:(length-1):1]
 plt.plot(xx[1:length:1],diff,marker='o',color='green',linewidth=1.5,markersize=5)
 plt.grid(color='b',lw=0.75)
 plt.title('Convergence')
-plt.xlabel('Number of slab (a.u.)')
-plt.ylabel('Surface energy difference (J/m^2)')
+plt.xlabel('Cell size (a=b=c, Angstrom)')
+plt.ylabel('Energy difference (meV/atom)')
 plt.savefig('myfig3')
 plt.clf()
 

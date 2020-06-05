@@ -43,8 +43,8 @@ def get_results(filename):
 
 def analyze(filenames):
     fieldnames = ['ecut', 'nkpts', 'alat', 'energy','total_force','run_time']
-    os.system("rm Al111_eqs.csv")
-    with open('Al111_eqs.csv', 'w') as csvfile:
+   #os.system("rm H2_k.csv")
+    with open('H2_k.csv', 'w') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for f in filenames:
@@ -64,7 +64,7 @@ if __name__ == "__main__":
 
  
 from itertools import islice
-with open('Al111_eqs.csv', 'r') as res1:
+with open('H2_k.csv', 'r') as res1:
     for line in islice(res1, 0, None):
         data1=csv.reader(res1, delimiter=',')
         for row in data1:
@@ -80,19 +80,19 @@ res1.close()
 # Force 1 Ry/Bohr = 25.711043 eV/Angstrom
 # Energy 1 Ry = 13.605698 eV
 
-yy=np.array(v_ene)/3
-xx=np.array(v_alat)
+yy=np.array(v_ene)/2*13.605698*1000
+xx=np.array(v_nkpts)
 # 0.529177208
 # time=np.array(v_rt)
 
-ind=np.where(yy==np.amin(yy))
-print(xx[ind])
+#ind=np.where(yy==np.amin(yy))
+#print(xx[ind])
 
 plt.plot(xx,yy,marker='o',color='purple',linewidth=1.5,markersize=5)
 plt.grid(color='b',lw=0.75)
-plt.title('Lattice constant vs. absolute energy (hex Al)')
-plt.xlabel('Lattice constant (Bohr)')
-plt.ylabel('Absolute energy (Ry/atom)')
+plt.title('K-points vs. absolute energy (H2)')
+plt.xlabel('K-points (a.u.)')
+plt.ylabel('Absolute energy (meV/atom)')
 plt.savefig('myfig1')
 plt.clf()
 
@@ -104,15 +104,15 @@ plt.xlabel('Cutoff energy (eV)')
 plt.ylabel('Run time (min)')
 plt.savefig('myfig2')
 plt.clf()
-
+'''
 length=len(yy)
 diff=yy[1:length:1]-yy[0:(length-1):1]
 plt.plot(xx[1:length:1],diff,marker='o',color='green',linewidth=1.5,markersize=5)
 plt.grid(color='b',lw=0.75)
-plt.title('Convergence (hex Al)')
-plt.xlabel('Cutoff (Ry)')
+plt.title('Convergence (H2)')
+plt.xlabel('K-points (a.u.)')
 plt.ylabel('Absolute energy difference (meV/atom)')
 plt.savefig('myfig3')
 plt.clf()
-'''
+
 os.system("sudo fbi myfig1.png")
