@@ -1,7 +1,7 @@
  &CONTROL
   calculation = 'relax' ,
   outdir = './tmp' ,
-  prefix = 'Al_111_3_3',
+  prefix = 'Al_H23_et0_3_3',
   pseudo_dir = './' ,
   tprnfor = .True.,
   tstress = .True.,
@@ -40,6 +40,6 @@ ATOMIC_POSITIONS crystal
   Al 0.3333333 0.6666666 0.44444443333333333
   Al 0.6666666 0.3333333 0.3888888833333333
   Al 0.0 0.0 0.3333333333333333
-  H 0.0 0.0 0.3611110667
+  H 0.8333333 0.1666667 0.44444443333333333
 K_POINTS Automatic 
   16 16 1  0 0 0
