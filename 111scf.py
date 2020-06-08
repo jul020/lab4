@@ -3,7 +3,7 @@ import shutil
 import numpy as np
 
 # Load the Si.pw.in.template file as a template.
-with open("Al.111.H3.et1.template") as f:
+with open("Al.111.H1.et1.template") as f:
     template = f.read()
 
 # Set default values for various parameters
@@ -16,7 +16,7 @@ for i in np.arange(1, 10, 10):
     # s = template.format(k1=k1, k3=k3, alat=alat, ecut=ecut)
 
     # Let's define an easy jobname.
-    jobname = "Al_111_H3_hole_B_site_%s" % (i)
+    jobname = "Al_111_H1_site_%s" % (i)
 
     # Write the actual input file for PWSCF.
     with open("%s.pw.in" % jobname, "w") as f:
