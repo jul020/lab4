@@ -1,0 +1,16 @@
+INTERNAL ERROR: invalid error code ffffffff (Ring Index out of range) in rdma_cm_get_hostnames:1267
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+slurmstepd: *** JOB 33980384 ON comet-10-66 CANCELLED AT 2020-06-07T22:43:42 ***
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000000CA118F  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AFEF808B5D0  Unknown               Unknown  Unknown
+pw.x               0000000000D5721C  __svml_sincos4_l9     Unknown  Unknown
+pw.x               0000000000773079  Unknown               Unknown  Unknown
+pw.x               00000000006FCBE7  Unknown               Unknown  Unknown
+pw.x               00000000004BF987  Unknown               Unknown  Unknown
+pw.x               0000000000578CEC  Unknown               Unknown  Unknown
+pw.x               0000000000411836  Unknown               Unknown  Unknown
+pw.x               000000000041165E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AFEFD9EE3D5  __libc_start_main     Unknown  Unknown
+pw.x               0000000000411569  Unknown               Unknown  Unknown

@@ -5,12 +5,12 @@
 
 # We are doing relatively small jobs. Let's just use a single processor on 
 # one node.
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
+#SBATCH --nodes=6
+#SBATCH --ntasks-per-node=12
 
 # This tells the queuing system that we want a walltime of 1 hour. For this lab,
 # this should be more than sufficient.
-#SBATCH -t 10:00:00
+#SBATCH -t 01:00:00
 
 # This sets the account, which is our NANO266 account
 #SBATCH -A csd452          
@@ -21,4 +21,4 @@ module load python qe
 
 # We first switch to our relevant directory, and then run the command.
 # Make modifications to the next two lines as you wish.
-python3 scf.py
+python3 111scf.py

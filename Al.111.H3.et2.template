@@ -1,7 +1,7 @@
  &CONTROL
   calculation = 'relax' ,
   outdir = './tmp' ,
-  prefix = 'Al_111_3_3',
+  prefix = 'Al_H3_et2_3_3',
   pseudo_dir = './' ,
   tprnfor = .True.,
   tstress = .True.,

@@ -1,0 +1,29 @@
+INTERNAL ERROR: invalid error code ffffffff (Ring Index out of range) in rdma_cm_get_hostnames:1267
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+slurmstepd: *** JOB 33980389 ON comet-13-47 CANCELLED AT 2020-06-07T23:44:33 DUE TO TIME LIMIT ***
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000000CA118F  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AD0F4AB05D0  Unknown               Unknown  Unknown
+libmkl_avx2.so     00002AD10516231F  mkl_dft_avx2_coDF     Unknown  Unknown
+libmkl_avx2.so     00002AD10502E1EB  Unknown               Unknown  Unknown
+libmkl_avx2.so     00002AD105008A11  Unknown               Unknown  Unknown
+libmkl_avx2.so     00002AD10500938F  Unknown               Unknown  Unknown
+libmkl_avx2.so     00002AD1050097FE  Unknown               Unknown  Unknown
+libmkl_rt.so       00002AD0F47321F4  DFTI_COMPUTE_BACK     Unknown  Unknown
+pw.x               0000000000A9C182  Unknown               Unknown  Unknown
+pw.x               0000000000A9BED2  Unknown               Unknown  Unknown
+pw.x               0000000000A99446  Unknown               Unknown  Unknown
+pw.x               00000000007882D9  Unknown               Unknown  Unknown
+pw.x               00000000006F8E22  Unknown               Unknown  Unknown
+pw.x               00000000006F8735  Unknown               Unknown  Unknown
+pw.x               0000000000A508B7  Unknown               Unknown  Unknown
+pw.x               0000000000674887  Unknown               Unknown  Unknown
+pw.x               000000000061B537  Unknown               Unknown  Unknown
+pw.x               000000000061D24D  Unknown               Unknown  Unknown
+pw.x               00000000004BF99A  Unknown               Unknown  Unknown
+pw.x               0000000000578CEC  Unknown               Unknown  Unknown
+pw.x               0000000000411836  Unknown               Unknown  Unknown
+pw.x               000000000041165E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD0FA4133D5  __libc_start_main     Unknown  Unknown
+pw.x               0000000000411569  Unknown               Unknown  Unknown

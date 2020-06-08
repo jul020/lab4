@@ -3,14 +3,14 @@ import shutil
 import numpy as np
 
 # Load the Si.pw.in.template file as a template.
-with open("Al.111.H1.et1.template") as f:
+with open("Al.111.H1.et3.template") as f:
     template = f.read()
 
 # Set default values for various parameters
-i=1
+i=3
 
 # Loop through different k-points.
-for i in np.arange(1, 10, 10):
+for i in np.arange(3, 10, 10):
     # This generates a string from the template with the parameters replaced
     # by the specified values.
     # s = template.format(k1=k1, k3=k3, alat=alat, ecut=ecut)
